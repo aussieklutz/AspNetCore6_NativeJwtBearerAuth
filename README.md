@@ -10,6 +10,10 @@ Also implements HS256. Other examples I could find implement RS256.
 
 ~~~
 dotnet add package Microsoft.AspNetCore.Cors
+dotnet add package Microsoft.AspNetCore.Authorization
 dotnet add package Microsoft.AspNetCore.Authentication
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 ~~~
+
+Note: I am unsure why, but adding the Microsoft.IdentityModel.Tokens package breaks this. 
+I think there are some components implemented in both with a name collision
